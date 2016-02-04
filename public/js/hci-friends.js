@@ -5,6 +5,13 @@ $(document).ready(function() {
 	initializePage();
 })
 
+$(".friend").click(function(){
+	//console.log("clicked");
+	//console.log($(this).text());
+	//console.log(anagrammedName("Doug Engelbart"));
+	event.preventDefault();
+	$(this).text((anagrammedName($(this).text()))); 
+});
 /*
  * Function that is called when the document is ready.
  */
